@@ -1,0 +1,60 @@
+<!-- Name - Amrinder Singh
+Date - 5 April, 2024
+Student Id - C0913235
+Currency Converter -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Currency Converter</title>
+</head>
+<body>
+  <!-- Header  -->
+  <header>
+    <div class="header">
+      <h1>Currency Converter</h1>
+    </div>
+  </header>
+
+  <!-- Main Body section  -->
+  <div class="container">
+  
+    <div class="Country-image">
+      <img id="currencyImg" src="images/cad.png" alt="Currency Image" width="100">
+    </div>
+
+    <!-- cont2 conatiner contain both input and dropdown and with display property i am aligning them  -->
+    <div class="cont2">
+      <div class="input">
+        <label for="amount">Enter Amount:</label>
+        <input type="number" id="value" placeholder="Enter amount...">
+      </div>
+  
+      <div class="dropdown">
+        <label for="currency">Select Currency:</label>
+        <select id="currency" onchange="changeCountryImage()">
+          <option value="cad" data-image="cad.png">CAD</option>
+          <option value="usd" data-image="usd.png">USD</option>
+        </select>
+      </div>
+    </div>
+
+   
+
+    <div class="result" id="result"></div>
+    <button class="btn" onclick="Convert()">Convert</button>
+
+
+  </div>
+
+  <!-- Footer  -->
+  <footer>
+<p>Made by Amrinder Singh with 💕</p>
+  </footer>
+
+  <script src="./script.js"></script>  </script>
+</body>
+</html>
